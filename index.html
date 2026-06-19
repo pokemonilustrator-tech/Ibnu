@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujian Sekolah - Anti Curang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="loginPage">
+        <h1>📝 Ujian Sekolah</h1>
+        <div class="card">
+            <h2>Masuk Ujian</h2>
+            <input type="text" id="nama" placeholder="Nama Lengkap">
+            <input type="text" id="kelas" placeholder="Kelas">
+            <input type="password" id="token" placeholder="Token Ujian">
+            <button onclick="mulaiUjian()">Mulai Ujian</button>
+            <p class="peringatan">⚠️ Sistem anti curang aktif</p>
+        </div>
+    </div>
+
+    <div class="container hidden" id="ujianPage">
+        <div class="header">
+            <span id="infoSiswa"></span>
+            <span id="timer">⏱ 30:00</span>
+            <button class="btn-darurat" onclick="submitUjian()">Selesai</button>
+        </div>
+
+        <div class="status-bar">
+            <span class="status-indicator" id="statusCurang">✅ Aman</span>
+            <span id="pelanggaran"></span>
+        </div>
+
+        <div class="soal-container" id="soalContainer"></div>
+
+        <div class="navigasi" id="navigasiSoal"></div>
+    </div>
+
+    <div class="container hidden" id="hasilPage">
+        <div class="card">
+            <h2>📊 Hasil Ujian</h2>
+            <div id="hasilContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

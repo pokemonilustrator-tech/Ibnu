@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f0f23;
+    color: #ccc;
+    min-height: 100vh;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.card {
+    background: #1a1a3e;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+h1 { color: #ffd700; margin-bottom: 20px; font-size: 24px; }
+h2 { margin-bottom: 20px; color: #fff; }
+h3 { color: #fff; margin: 15px 0; }
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background: #0a0a1a;
+    color: #fff;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ffd700;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ffd700;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #1a1a3e;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #ffed4a;
+}
+
+.peringatan {
+    color: #ff6b6b;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.header {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #1a1a3e;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+}
+
+#timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.btn-darurat {
+    width: auto;
+    padding: 8px 20px;
+    background: #ff4757;
+    color: #fff;
+}
+
+.status-bar {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.status-indicator {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.status-aman {
+    background: #27ae60;
+    color: #fff;
+}
+
+.status-curiga {
+    background: #f39c12;
+    color: #fff;
+}
+
+.status-curang {
+    background: #e74c3c;
+    color: #fff;
+}
+
+#pelanggaran {
+    color: #ff6b6b;
+    font-size: 14px;
+}
+
+.soal-container {
+    width: 100%;
+    max-width: 800px;
+    background: #1a1a3e;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.pilihan {
+    display: block;
+    padding: 12px 15px;
+    margin: 8px 0;
+    background: #0a0a1a;
+    border: 2px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #ccc;
+}
+
+.pilihan:hover {
+    border-color: #ffd700;
+    background: #151530;
+}
+
+.pilihan.dipilih {
+    border-color: #ffd700;
+    background: #1a1a3e;
+}
+
+.navigasi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+    max-width: 800px;
+}
+
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 14px;
+    background: #1a1a3e;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.nav-btn.terjawab {
+    background: #27ae60;
+    border-color: #27ae60;
+}
+
+.nav-btn.aktif {
+    border-color: #ffd700;
+    background: #ffd700;
+    color: #1a1a3e;
+}
+
+#hasilContent {
+    color: #fff;
+    text-align: center;
+}
+
+.nilai {
+    font-size: 48px;
+    color: #ffd700;
+    font-weight: bold;
+}
